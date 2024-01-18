@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kagi</title>
+    <link rel="stylesheet" href="styles.css">
+    <h1>k a g i</h1>
+    <h2>Kalkulator Persegi</h2>
+    <h3>Selamat Datang!</h3>
+    <h4>sebuah website sederhana untuk menghitung luas dan keliling persegi dalam satu kali klik</h4>
+</head>
+<body>
+    <div id="container">
+        <h5>Cara Perhitungan:</h5>
+        <div id = "image-container">
+        <img src="https://rpp.co.id/wp-content/uploads/2021/05/persegi.jpg" alt="External Image" width="200px"/>
+        </div>
+        <div id="formula-container">
+            <p class="formula">Luas (L) = Sisi x Sisi</p>
+            <p class="formula">Keliling (K) = 4 x Sisi</p>
+        </div>
+        
+
+        <div id="form-container">
+            <label for="sideLength">Panjang Sisi Persegi:</label>
+            <input type="number" id="sideLength" placeholder="Masukkan panjang sisi">
+
+            <button onclick="calculate()">Hitung</button>
+
+            <h6>Hasil Perhitungan:</h6>
+            <div id="result-container">
+                <div id="areaFormula" class="formula">Luas (L) = Sisi x Sisi</div>
+                <div id="areaResult" class="result">Luas:</div>
+                <div id="perimeterFormula" class="formula">Keliling (K) = 4 x Sisi</div>
+                <div id="perimeterResult" class="result">Keliling:</div>
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
